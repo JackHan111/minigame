@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>꼬물이 소탕 작전</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/javascript.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header><h1 class="sr-only">꼬물이 소탕작전 !</h1></header>
+
+        <section class="project">
+            <!-- 인트로 bg -->
+            <div class="intro">
+                <div class="intro-txt">
+                    <p>
+                        도와줘!! <br />
+                        꼬물이가 우리 마을을 습격했어! <br />
+                    </p>
+                    <p>
+                        온 동네가 꼬물이 토성이야
+                    </p>
+                    <p>
+                        꼬물이는 <strong>100점</strong>, 황금 꼬물이는 <strong>300점</strong>이야.
+                    </p>
+                    <p>
+                        너무 많은 꼬물이를 잡게되면 까칠이가 같이 나와! <br />
+                        까칠이는 <strong>-200점</strong>이야
+                    </p>
+                    <p>
+                        꼬물이한테서 동네를 지킬 수 있도록 <br />
+                        도와줄 수 있겠어?
+                    </p>
+                </div>
+                <button type="button">START</button>
+            </div>
+
+            <!-- 게임 메인화면 -->
+
+            <div class="main">
+                <h2>삼십초 안에 꼬물이를 잡지 않으면 더 늘어날 거야!</h2>
+                <strong class="score">0000점</strong>
+                <h3 class="timer">0:30 / 0:<span>0</span></h3>
+                <ul class="main-map">
+                    <li>
+                        <p class="bush"><img src="./images/tree_2.png" alt="풀숲모형2번"></p>
+
+                        <ol class="monster-box">
+                            <li class="normal"><a href="#">꼬물이</a></li>
+                            <li class="golden"><a href="#">황금꼬물이</a></li>
+                            <li class="kkachil"><a href="#">까칠이</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p class="bush"><img src="./images/tree_1.png" alt="풀숲모형2번"></p>
+
+                        <ol class="monster-box">
+                            <li class="normal"><a href="#">꼬물이</a></li>
+                            <li class="golden"><a href="#">황금꼬물이</a></li>
+                            <li class="kkachil"><a href="#">까칠이</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p class="bush"><img src="./images/tree_2.png" alt="풀숲모형2번"></p>
+
+                        <ol class="monster-box">
+                            <li class="normal"><a href="#">꼬물이</a></li>
+                            <li class="golden"><a href="#">황금꼬물이</a></li>
+                            <li class="kkachil"><a href="#">까칠이</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p class="bush"><img src="./images/tree_1.png" alt="풀숲모형2번"></p>
+
+                        <ol class="monster-box">
+                            <li class="normal"><a href="#">꼬물이</a></li>
+                            <li class="golden"><a href="#">황금꼬물이</a></li>
+                            <li class="kkachil"><a href="#">까칠이</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p class="bush"><img src="./images/tree_2.png" alt="풀숲모형2번"></p>
+
+                        <ol class="monster-box">
+                            <li class="normal"><a href="#">꼬물이</a></li>
+                            <li class="golden"><a href="#">황금꼬물이</a></li>
+                            <li class="kkachil"><a href="#">까칠이</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p class="bush"><img src="./images/tree_1.png" alt="풀숲모형2번"></p>
+
+                        <ol class="monster-box">
+                            <li class="normal"><a href="#">꼬물이</a></li>
+                            <li class="golden"><a href="#">황금꼬물이</a></li>
+                            <li class="kkachil"><a href="#">까칠이</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p class="bush"><img src="./images/tree_2.png" alt="풀숲모형2번"></p>
+
+                        <ol class="monster-box">
+                            <li class="normal"><a href="#">꼬물이</a></li>
+                            <li class="golden"><a href="#">황금꼬물이</a></li>
+                            <li class="kkachil"><a href="#">까칠이</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p class="bush"><img src="./images/tree_1.png" alt="풀숲모형2번"></p>
+
+                        <ol class="monster-box">
+                            <li class="normal"><a href="#">꼬물이</a></li>
+                            <li class="golden"><a href="#">황금꼬물이</a></li>
+                            <li class="kkachil"><a href="#">까칠이</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p class="bush"><img src="./images/tree_2.png" alt="풀숲모형2번"></p>
+                        
+                        <ol class="monster-box">
+                            <li class="normal"><a href="#">꼬물이</a></li>
+                            <li class="golden"><a href="#">황금꼬물이</a></li>
+                            <li class="kkachil"><a href="#">까칠이</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <!-- 마무리 -->
+            <div class="ending">
+                <ul class="point">
+                    <li><span class="kko"></span></li>
+                    <li><span class="gold"></span></li>
+                    <li><span class="kka"></span></li>
+                </ul>
+                <p class="total">
+                    <span class="total_score"></span>
+                </p>
+                <ul class="link">
+                    <li><a onClick="window.location.reload()" style="cursor: pointer;"></a></li>
+                    <li><a href="https://ca.nexon.com/Home/Index" target="_blank"></a></li>
+                </ul>
+                <div class="creater">
+                    <address>
+                        <a href="#">만든 사람들</a>
+                        <ul>
+                            <li>&#9829;<span>김수현</span>&#9829;</li>
+                            <li>&#9829;<span>장기봉</span>&#9829;</li>
+                            <li>&#9829;<span>전찬양</span>&#9829;</li>
+                            <li>&#9829;<span>정다인</span>&#9829;</li>
+                            <li>&#9829;<span>한재근</span>&#9829;</li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            
+        </footer>
+    </div>
+</body>
+</html>

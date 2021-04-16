@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+body{
+    background-image: url(../images/body_bg.png);
+}
+#wrap{
+    width: 1400px;
+    margin: 0 auto;
+    font-family: 'noto sans kr';
+}
+
+header>h1{
+    height: 150px;
+    font-size: 40px;
+    line-height: 150px;
+    text-align: center;
+}
+
+
+
+/* 섹션 - 인트로 영역 */
+
+.project{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.intro{
+    /* display: none; */
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    width: 750px;
+    height: 610px;
+    margin-left: -375px;
+    background-image: url(../images/intro_bg.png);
+    background-repeat: no-repeat;
+    z-index: 500;
+}
+
+.intro>.intro-txt{
+    position: absolute;
+    top: 29%;
+    left: 46%;
+    width: 300px;
+}
+
+.intro>.intro-txt>p{
+    margin: 15px;
+    font-weight: bold;
+}
+
+.intro>.intro-txt>p>strong{
+    font-size: 1.1em;
+}
+.intro>.intro-txt>p:nth-child(3)>strong:nth-child(1){color: green;}
+.intro>.intro-txt>p:nth-child(3)>strong:nth-child(2){color: goldenrod;}
+.intro>.intro-txt>p:nth-child(4)>strong{color: #f00;}
+
+.intro>button{
+    position: absolute;
+    right: 13%;
+    bottom: 24%;
+    display: block;
+    width: 110px;
+    height: 68px;
+    text-indent: -9999px;
+    outline: none;
+    background: none;
+    border: none;
+    background-image: url(../images/intro-btn_start.png);
+    background-repeat: no-repeat;
+}
+.intro>button:hover{background-image: url(../images/intro-btn_start_hover.png);}
+
+
+
+/* 메인게임 영역 */
+
+
+.main{
+    display: none;
+    position: relative;
+    width: 1341px;
+    height: 923px;
+    background-image: url(../images/main_bg.png);
+    background-repeat: no-repeat;
+}
+
+.main>h2{
+    position: absolute;
+    top: 18%;
+    left: 33%;
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.8em;
+}
+.main>h3{
+    position: absolute;
+    top: 65px;
+    left: 33%;
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.8em;
+}
+.main>.score{
+    position: absolute;
+    top: 75px;
+    left: 58%;
+    font-size: 40px;
+}
+
+.main>.main-map{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 265px;
+    left: 435px;
+    width: 511px;
+    height: 601px;
+    background-image: url(../images/main-map.png);
+}
+
+.main>.main-map>li{
+    position: relative;
+    width: 170px;
+}
+
+
+.main>.main-map>li>.bush{
+    position: absolute;
+    /* top: 20%; */
+    left: 0;
+    width: 86px;
+    height: 121px;
+    z-index: 300;
+}
+
+/* 가로 기준 부쉬 위치조정 */
+
+.main>.main-map>li:nth-child(1)>.bush,
+.main>.main-map>li:nth-child(2)>.bush,
+.main>.main-map>li:nth-child(3)>.bush{top: 47%;}
+
+.main>.main-map>li:nth-child(4)>.bush,
+.main>.main-map>li:nth-child(5)>.bush,
+.main>.main-map>li:nth-child(6)>.bush{top: 30%;}
+
+.main>.main-map>li:nth-child(7)>.bush,
+.main>.main-map>li:nth-child(8)>.bush,
+.main>.main-map>li:nth-child(9)>.bush{top: 18%;}
+
+
+.main>.main-map>li>.bush>img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 꼬물이  */
+
+.main>.main-map>li>.monster-box{
+    position: relative;
+}
+
+.main>.main-map>li>.monster-box>li{
+    position: absolute;
+    width: 86px;
+    opacity: 1;
+}
+
+/* 가로 기준 꼬물이 위치조정 */
+.main>.main-map>li:nth-child(1)>.monster-box>li,
+.main>.main-map>li:nth-child(2)>.monster-box>li,
+.main>.main-map>li:nth-child(3)>.monster-box>li{
+    top: 110px;
+    left: 0;
+    /* right: 0; */
+}
+
+.main>.main-map>li:nth-child(4)>.monster-box>li,
+.main>.main-map>li:nth-child(5)>.monster-box>li,
+.main>.main-map>li:nth-child(6)>.monster-box>li{
+    top: 75px;
+    left: 0;
+    /* right: 0; */
+}
+
+.main>.main-map>li:nth-child(7)>.monster-box>li,
+.main>.main-map>li:nth-child(8)>.monster-box>li,
+.main>.main-map>li:nth-child(9)>.monster-box>li{
+    top: 50px;
+    /* left: 0; */
+    /* right: 0; */
+}
+
+/* 꼬물이 이미지 */
+.main>.main-map>li>.monster-box>.normal{background-image: url(../images/normal_kkomul_1.png);}
+.main>.main-map>li>.monster-box>.golden{background-image: url(../images/golden-kkomul_1.png);}
+.main>.main-map>li>.monster-box>.kkachil{background-image: url(../images/kkachil_1.png);}
+
+.main>.main-map>li>.monster-box>li>a{
+    display: block;
+    height: 106px;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+}
+
+.normal{
+display: none;
+}
+.golden{
+display: none;
+}
+.kkachil{
+display: none;
+}
+.ending{
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -375px;
+    width: 750px;;
+    height: 610px;
+    background-image: url(../images/finish.png);
+    z-index: 500;
+}
+.ending>.point{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    margin-left: -45px;
+    width: 175px;
+    height: 30px;
+    /* background-color: pink; */
+}
+.ending>.point>li{
+    width: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.ending>.total{
+    position: absolute;
+    top: 210px;
+    right: 120px;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    /* background-color: pink; */
+}
+.ending>.link{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    /* background-color: pink; */
+    top: 400px;
+    left: 300px;
+    width: 345px;
+    height: 50px;
+}
+.ending>.link>li>a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    /* background-color: yellowgreen; */
+}
+.ending>.creater>address{
+    position: absolute;
+    left: 100px;
+    top: 165px;
+    width: 160px;
+    
+}
+.ending>.creater>address>a{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+    border-radius: 15px;
+    background-image: url(../images/outro_btn.png);
+    background-position: -170px -68px;
+}
+.ending>.creater>address>ul{display: none;}
+.ending>.creater>address>ul>li{
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-image: url(../images/outro_btn.png);
+    background-position: -170px -5px;
+    font-size: 15px;
+    color: #f00;
+}
+.ending>.creater>address>ul>li>span{
+    color: #222;
+    font-weight: 800;
+}
+
